@@ -1,8 +1,8 @@
-currentTimeStr = input("What is the current time (in hours 0-23)?")
-waitTimeStr = input("How many hours do you want to wait"
+# Aaron Sanders
+# 07/29/2025
 
-currentTimeInt = int(current_time_str)
-waitTimeInt = int(wait_time_str)
+current_time_str = int(input("What is the current time (in hours 0-23)? "))
+wait_time_str = int(input("How many hours do you want to wait? "))
 
-finalTimeInt = currentTimeInt + waitTimeInt
-print(finalTime_Int)
+final_time_int = current_time_str + wait_time_str
+print(final_time_int % 24)

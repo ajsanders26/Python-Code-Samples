@@ -1,3 +1,6 @@
+# Aaron Sanders
+# 07/29/2025
+
 # Calculating Grades (ok, let me think about this one)
 
 # Write a program that will average 3 numeric exam grades, return an average test score, a corresponding letter grade, and a message stating whether the student is passing.
@@ -17,40 +20,42 @@
 # Exams: 50, 51, 0
 # Average: 33
 # Grade: F
-# Student iis failing.
+# Student is failing.
 
-exam_one = int(input("Input exam grade one: "))
+exam_1 = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: "))
+exam_2 = int(input("Input exam grade two: "))
 
-exam_3 = str(input("Input exam grade three: "))
+exam_3 = int(input("Input exam grade three: "))
 
-grades = [exam_one exam_two exam_three]
+grades = [exam_1, exam_2, exam_3]
+
 sum = 0
-for grade in grade:
+for grade in grades:
   sum = sum + grade
 
-avg = sum / len(grdes)
+avg = sum / len(grades)
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90:
     letter_grade = "B"
-elif avg > 69 and avg < 80:
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
+elif avg >= 70 and avg < 80:
+    letter_grade = "C"
+elif avg >= 60 and avg < 70:
     letter_grade = "D"
-elif:
+else:
     letter_grade = "F"
 
+print("Exams: ")
 for grade in grades:
-    print("Exam: " + str(grade))
+    print(str(grade))
 
-    print("Average: " + str(avg))
 
-    print("Grade: " + letter_grade)
+print("Average: %.2f" % float(avg))
+print("Grade: " + letter_grade)
 
-if letter-grade is "F":
-    print "Student is failing."
+if letter_grade == "F":
+    print("Student is failing.")
 else:
-    print "Student is passing."
+    print("Student is passing.")
