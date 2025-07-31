@@ -4,11 +4,6 @@
 str_time = input("What time is it now?")
 str_wait_time = input("What is the number of hours to wait?")
 
-time_hours_minutes = str_time.split(":")
-wait_hours_minutes = str_wait_time.split(":")
-
-
-
 time = int(str_time)
 wait_time = int(str_wait_time)
 
