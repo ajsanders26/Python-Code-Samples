@@ -13,7 +13,9 @@ turt = turtle.Turtle()
 turt.speed(0)
 
 # Welcome
-print("")
+print("""
+
+""")
 
 # User input
 radius = int(input("What is the radius of your spiral? "))
