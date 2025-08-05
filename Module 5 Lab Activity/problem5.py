@@ -2,6 +2,8 @@
 # 07/30/2025
 
 # Mimic Ulam Spiral using turtle library
+# Prints segments of a spiral to a specified radius and number of rotations
+# Marks each nth segment of the spiral with a different color when n is prime
 
 import math
 import turtle
@@ -13,12 +15,16 @@ turt = turtle.Turtle()
 turt.speed(0)
 
 # Welcome
-print("""
-
+print("""Welcome to the Ulam Spiral Visualizer!
+https://en.wikipedia.org/wiki/Ulam_spiral\n
+Here you can set the size of the spiral, number of rotations, and how far to count up to.
+The larger the number for the count, the more of the \"pattern\" is apparent.\n
+Experiment and see what settings work for you!
+(Suggested Settings: 400, 60, >10000... it may take awhile to fully render.)\n\n
 """)
 
 # User input
-radius = int(input("What is the radius of your spiral? "))
+radius = int(input("What is the radius of your spiral?"))
 rotations = int(input("How many rotations do you wish to have? "))
 steps = int(input("How many numbers do you wish to count to? "))
 
